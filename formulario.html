@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <!-- inicio formulario -->
+    <form action="recebedados.php" method="get">
+
+        Nome: <input type="text" name="nome" required> <br><br>
+        Senha: <input type="password" name="senha" required> <br><br>
+        Nome da mãe: <input type="text" name="nomeMae"> <br><br>
+        Brasileiro Nato: <br>
+            <input type="radio" name="brasNato" value="sim">Sim <br>
+            <input type="radio" name="brasNato" value="nao">Não <br><br>
+        Data de Nascimento: <br>
+            <input type="date" name="data">  <br><br>
+        Cor: <input type="color" name="cor"> <br><br>  
+        
+        Estado: <select name="estado">
+
+                    <option value="sp">SP</option>
+                    <option value="ce">CE</option>
+                    <option value="am">AM</option>
+                    <option value="mg">MG</option>
+            
+                </select> <br><br>
+        
+        Observações: <br>
+            <textarea name="obs"></textarea> <br><br>
+
+        Escolha as discplinas: <br>
+            <input type="checkbox" name="matematica" value="mat">  Matemática<br> 
+            <input type="checkbox" name="historia" value="his"> Historia<br>
+            <input type="checkbox" name="geografia" value="geo"> Geografia<br>
+            <input type="checkbox" name="biologia" value="bio">  Biologia<br>
+
+        <br><br>
+        <input type="submit" value="Login">
+
+    </form>
+    <!-- fim formulario -->
+
+</body>
+
+</html>
